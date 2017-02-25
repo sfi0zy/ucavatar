@@ -1,0 +1,15 @@
+{
+  "name": "ucavatar",
+  "version": "1.0.0",
+  "description": "Unique avatars generator",
+  "main": "ucavatar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sfi0zy/ucavatar.git"
+  },
+  "author": "Ivan Bogachev <sfi0zy@gmail.com>",
+  "license": "MIT"
+}
