@@ -6,7 +6,7 @@ Ucavatar is a little standalone library for generating unique avatars.
 ## Installation
 From NPM
 ```sh
-npm insall --save ucavatar
+npm install --save ucavatar
 ```
 ```js
 var Ucavatar = require('ucavatar');
@@ -24,11 +24,15 @@ At first, You need a canvas:
 ```
 You can generate an avatar with the following code:
 ```js
-Ucavatar('#avatar', 'my name, nickname or email')
+Ucavatar('#avatar', 'name, nickname or email')
+```
+Or pass canvas itself:
+```js
+Ucavatar(document.querySelector('#avatar'), 'name')
 ```
 By default size of an avatar is 64x64, but You can specify a custom one:
 ```js
-Ucavatar('#avatar', 'my name', 128)
+Ucavatar('#avatar', 'name', 128)
 ```
 
 ## Enjoy it!
