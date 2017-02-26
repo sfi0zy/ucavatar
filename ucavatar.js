@@ -1,7 +1,8 @@
 // Ucavatar.js
 // Unique avatars generator
 //
-// Author: Ivan Bogachev <sfi0zy@gmail.com>, 2017
+// Version: 1.0.1
+// Author:  Ivan Bogachev <sfi0zy@gmail.com>, 2017
 // License: MIT
 
 
