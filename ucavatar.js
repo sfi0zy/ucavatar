@@ -52,19 +52,24 @@ function Ucavatar(canvas, str, size) {
             a = h[i] / 20;
        
         ctx.fillStyle = 'rgba(' + r + ',' + g + ',' + b + ',' + a + ')';
+
+        var c1 = h[i]*h[i] % 16,
+            c2 = h[i]*h[7] % 16,
+            c3 = h[i]*h[0] % 32,
+            c4 = h[i]*h[0] % 32;
         
-        var c1 = h[i]*h[i] % (size/4),
-            c2 = h[i]*h[7] % (size/4),
-            c3 = h[i]*h[0] % (size/2),
-            c4 = h[i]*h[0] % (size/2);
-        
-        if (c1 + c2 < (size/2)) {
+        if (c1 + c2 < 32) {
             c1 *= -2;
             c2 *= -2;
             c3 *=  2;
             c4 *=  2;
         }
         
+        c1 = c1 * size / 64;
+        c2 = c2 * size / 64;
+        c3 = c3 * size / 64;
+        c4 = c4 * size / 64;
+      
         var s = h[7] % 2 + 2;
         
         for (var j = 0; j < 2 * s; j++) {
