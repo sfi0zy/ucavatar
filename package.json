@@ -1,6 +1,6 @@
 {
   "name": "ucavatar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Unique avatars generator",
   "main": "ucavatar.js",
   "scripts": {
