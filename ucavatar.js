@@ -1,7 +1,7 @@
 // Ucavatar.js
 // Unique avatars generator
 //
-// Version: 1.0.2
+// Version: 1.0.3
 // Author:  Ivan Bogachev <sfi0zy@gmail.com>, 2017
 // License: MIT
 
@@ -128,7 +128,7 @@ var Ucavatar = (function() {
                 c3 = c,
                 c4 = c;
         
-            if (2 * c < 32) {
+            if (2 * c < (size / 2)) {
                 c1 *= -2;
                 c2 *= -2;
                 c3 *= 5;
@@ -189,7 +189,7 @@ var Ucavatar = (function() {
         ctx.fillRect(0, 0, size, size);
 
         ctx.translate(size/2, size/2);
-        ctx.rotate(Math.PI / 4); 
+        ctx.rotate(h[0] * Math.PI / (h[1] + 1)); 
         drawRects(ctx, colors, getRectCoords(h, size), s);
 
         ctx.rotate(Math.PI / 2);
@@ -213,10 +213,14 @@ var Ucavatar = (function() {
         drawCircle(ctx, colors, size/8);
         drawRects(ctx, colors, getRectCoords(h, size/10), s);
 
+        var colors2 = getColorScheme(h, .5);
+
         for (var i = 0; i < s; i++) {
             ctx.rotate(2 * Math.PI / s);
             ctx.translate(size/4, size/4);
-            drawRects(ctx, colors, getRectCoords(h, size/(2*s)), s);
+            drawRects(ctx, colors, getRectCoords(h, size/(1.7*s)), s);
+            drawCircle(ctx, colors2, size/(2*s));
+            drawRects(ctx, colors, getRectCoords(h, size/(3*s)), s);
             ctx.translate(-size/4, -size/4);
         }
         
@@ -224,9 +228,9 @@ var Ucavatar = (function() {
 
         for (var i = 0; i < s; i++) {
             ctx.rotate(2 * Math.PI / s);
-            ctx.translate(size/(5*h[0]/10), size/(5*h[0]/10));
+            ctx.translate(size/(s*h[0]/10), size/(s*h[0]/10));
             drawRects(ctx, colors, getRectCoords(h, size/(3*s)), s);
-            ctx.translate(-size/(5*h[0]/10), -size/(5*h[0]/10));
+            ctx.translate(-size/(s*h[0]/10), -size/(s*h[0]/10));
         }
     };
 
