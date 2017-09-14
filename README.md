@@ -17,6 +17,11 @@ Or You can copy it into your project and use a script tag
 <script src='ucavatar.js'></script>
 ```
 
+Also You can use CDN version:
+```html
+<script src='https://unpkg.com/ucavatar/ucavatar.js'></script>
+```
+
 ## Examples
 At first, You need a canvas:
 ```html
