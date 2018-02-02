@@ -1,5 +1,7 @@
 # Ucavatar.js
-Ucavatar is a little standalone library for generating unique avatars.
+![version-badge](https://img.shields.io/npm/v/ucavatar.svg?style=flat-square&colorB=00b5d6) ![npm-downloads](https://img.shields.io/npm/dt/ucavatar.svg?style=flat-square&colorB=00b5d6) ![license-badge](https://img.shields.io/badge/dynamic/json.svg?style=flat-square&label=license&colorB=00b5d6&prefix=&suffix=&query=license&uri=https://raw.githubusercontent.com/sfi0zy/ucavatar/master/package.json)
+
+Unique avatars for your users. No dependencies. 1.6KB gzipped.
 
 ![Preview of Ucavatar](https://raw.githubusercontent.com/sfi0zy/ucavatar/master/preview.png)
 
@@ -12,18 +14,18 @@ npm install --save ucavatar
 var Ucavatar = require('ucavatar');
 ```
 
-Or You can copy it into your project and use a script tag
+Or you can copy it into your project and use a script tag
 ```html
 <script src='ucavatar.js'></script>
 ```
 
-Also You can use CDN version:
+Also you can use CDN:
 ```html
 <script src='https://unpkg.com/ucavatar/ucavatar.js'></script>
 ```
 
 ## Examples
-At first, You need a canvas:
+At first, you need a canvas:
 ```html
 <canvas id='avatar'></canvas>
 ```
@@ -35,11 +37,9 @@ Or pass canvas itself:
 ```js
 Ucavatar(document.querySelector('#avatar'), 'name')
 ```
-By default size of an avatar is 64x64, but You can specify a custom one:
+By default size of an avatar is 64x64, but you can specify a custom one:
 ```js
 Ucavatar('#avatar', 'name', 128)
 ```
 
 ## Enjoy it!
-Ucavatar is based on my pen [Unique Avatars Generator (prototype)](http://codepen.io/sfi0zy/pen/kkBAjd), it is a beta version and I have not very much time to work on it. If you have an idea how to improve Ucavatar - You can fork it, make changes and create a pull request, or contact me by email (sfi0zy@gmail.com).
-
