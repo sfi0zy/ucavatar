@@ -1,5 +1,5 @@
 # Ucavatar.js
-![version-badge](https://img.shields.io/npm/v/ucavatar.svg?style=flat-square&colorB=00b5d6) ![npm-downloads](https://img.shields.io/npm/dt/ucavatar.svg?style=flat-square&colorB=00b5d6) ![license-badge](https://img.shields.io/badge/dynamic/json.svg?style=flat-square&label=license&colorB=00b5d6&prefix=&suffix=&query=license&uri=https://raw.githubusercontent.com/sfi0zy/ucavatar/master/package.json)
+![version-badge](https://img.shields.io/npm/v/ucavatar.svg?style=flat-square&colorB=00b5d6) ![npm-downloads](https://img.shields.io/npm/dt/ucavatar.svg?style=flat-square&colorB=00b5d6) ![license-badge](https://img.shields.io/badge/dynamic/json.svg?style=flat-square&label=license&colorB=00b5d6&query=license&uri=https://raw.githubusercontent.com/sfi0zy/ucavatar/master/package.json)
 
 Unique avatars for your users. No dependencies. 1.6KB gzipped.
 
